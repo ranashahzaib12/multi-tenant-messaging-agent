@@ -1,0 +1,21 @@
+.env
+credentials.json
+token.json
+.git
+# Developer-only context. The Claude Code runtime inside the app treats its
+# working directory as a project and picked up CLAUDE.md/MEMORY.md (infra IDs,
+# gotchas, 10k+ tokens) into every user turn - seen when Aria repeated a
+# MEMORY.md note to a user. None of this is needed to run the app.
+CLAUDE.md
+MEMORY.md
+README.md
+.claude/
+graphify-out/
+.graphifyignore
+tests/
+__pycache__
+*.pyc
+db/
+.venv/
+venv/
+*.sqlite*
